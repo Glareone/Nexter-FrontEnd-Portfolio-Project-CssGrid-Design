@@ -35,7 +35,16 @@ f. Lecture 6, Align Grid Items:
 g. Lecture 7, Align Tracks (Grid in container):
 *  Stage 1 [https://codepen.io/Glareone/pen/MNJYqG]
 * Stage 2, grid-auto-flow: row dense; [https://codepen.io/Glareone/pen/ZgLYZq] 
-(to change grid order algoritm and occupy some free space, "NO HOLES")
+(to change grid order algorithm and occupy some free space, "NO HOLES")
+
+h. Lecture 8, min-content, max-content:
+* Stage 1, min-content and max-content example: [https://codepen.io/Glareone/pen/QedbaZ]
+* Stage 2, minmax function with rows: [https://codepen.io/Glareone/pen/BXpNqP]
+* Stage 3, minmax function also with columns: [https://codepen.io/Glareone/pen/Xvpbyb]
+
+i. Lecture 9, auto-fit, auto-fill:
+* Stage 1, auto-fit and auto-fill: [https://codepen.io/Glareone/pen/EqZjqy?editors=1100]
+* Stage 2, replacing elements if all tracks can't be placed in one row: [https://codepen.io/Glareone/pen/MNJaww]
 
 To start project you could do the next:
 1. npm install
