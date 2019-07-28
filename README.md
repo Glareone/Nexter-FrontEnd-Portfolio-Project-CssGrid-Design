@@ -1,7 +1,13 @@
 Hi!
 Here you could find the result set of Udemy Advanced CSS and SASS Courses (Second Project, Trillo)
 You can find a demo via the next url:
-[ https://glareone.github.io/Nexter-FrontEnd-Portfolio-Project-CssGrid-Design/]
+[https://glareone.github.io/Nexter-FrontEnd-Portfolio-Project-CssGrid-Design/]
+
+CssGrid properties:
+![alt text](img/cssGrid_properties.jpg)
+
+Codepen demos:
+
 
 To start project you could do the next:
 1. npm install
