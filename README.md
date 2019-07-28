@@ -6,9 +6,19 @@ You can find a demo via the next url:
 CssGrid properties:
 ![alt text](img/cssGrid_properties.jpg)
 
-Codepen demos:
-1. Basics: [https://codepen.io/Glareone/pen/bXBzMx]
-2. Css grid ordering: [https://codepen.io/Glareone/pen/PMbvye]
+Codepen demos, ordering by lectures:
+ 
+a. Lecture 1:
+* Basics: [https://codepen.io/Glareone/pen/bXBzMx]
+
+b. Lecture 2, ordering:
+* stage 1: [https://codepen.io/Glareone/pen/PMbvye]
+* stage 2: [https://codepen.io/Glareone/pen/bXByPz]
+
+c. Lecture 3, spanning items (number of column\row, span, -1):
+* stage 1: [https://codepen.io/Glareone/pen/eqBwNJ]
+* stage 2: [https://codepen.io/Glareone/pen/QeGXye]
+* stage 3: [https://codepen.io/Glareone/pen/zgoVKN]
 
 To start project you could do the next:
 1. npm install
