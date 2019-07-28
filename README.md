@@ -32,6 +32,11 @@ e. Lecture 5, Implicit vs Explicit Grids:
 f. Lecture 6, Align Grid Items:
 * [https://codepen.io/Glareone/pen/gVgbmp]
 
+g. Lecture 7, Align Tracks (Grid in container):
+*  Stage 1 [https://codepen.io/Glareone/pen/MNJYqG]
+* Stage 2, grid-auto-flow: row dense; [https://codepen.io/Glareone/pen/ZgLYZq] 
+(to change grid order algoritm and occupy some free space, "NO HOLES")
+
 To start project you could do the next:
 1. npm install
 2. npm run start
