@@ -42,6 +42,10 @@ h. Lecture 8, min-content, max-content:
 * Stage 2, minmax function with rows: [https://codepen.io/Glareone/pen/BXpNqP]
 * Stage 3, minmax function also with columns: [https://codepen.io/Glareone/pen/Xvpbyb]
 
+i. Lecture 9, auto-fit, auto-fill:
+* Stage 1, auto-fit and auto-fill: [https://codepen.io/Glareone/pen/EqZjqy?editors=1100]
+* Stage 2, replacing elements if all tracks can't be placed in one row: [https://codepen.io/Glareone/pen/MNJaww]
+
 To start project you could do the next:
 1. npm install
 2. npm run start
