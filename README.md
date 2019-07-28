@@ -7,7 +7,7 @@ CssGrid properties:
 ![alt text](img/cssGrid_properties.jpg)
 
 Codepen demos:
-
+[https://codepen.io/Glareone/pen/bXBzMx]
 
 To start project you could do the next:
 1. npm install
