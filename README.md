@@ -7,7 +7,8 @@ CssGrid properties:
 ![alt text](img/cssGrid_properties.jpg)
 
 Codepen demos:
-[https://codepen.io/Glareone/pen/bXBzMx]
+1. Basics: [https://codepen.io/Glareone/pen/bXBzMx]
+2. Css grid ordering: [https://codepen.io/Glareone/pen/PMbvye]
 
 To start project you could do the next:
 1. npm install
