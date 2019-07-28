@@ -20,6 +20,12 @@ c. Lecture 3, spanning items (number of column\row, span, -1):
 * stage 2: [https://codepen.io/Glareone/pen/QeGXye]
 * stage 3: [https://codepen.io/Glareone/pen/zgoVKN]
 
+d. Lecture 4, Grid Challenge:
+* Method 1, Line numbers: [https://codepen.io/Glareone/pen/QeGXrj]
+* Method 2, Line naming: [https://codepen.io/Glareone/pen/qeRBjV]
+* Method 3, Naming Grid Areas:  [https://codepen.io/Glareone/pen/rXjNrm] and with some experiments [https://codepen.io/Glareone/pen/bXgGZd]
+
+
 To start project you could do the next:
 1. npm install
 2. npm run start
