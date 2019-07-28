@@ -1,5 +1,6 @@
 Hi!
-Here you could find the result set of Udemy Advanced CSS and SASS Courses (Second Project, Trillo)
+Here you could find the result set of Udemy Advanced CSS and SASS Courses (Third Project, Nexter)
+And also here you could find a lot of simple examples which was made in codepen.
 You can find a demo via the next url:
 [https://glareone.github.io/Nexter-FrontEnd-Portfolio-Project-CssGrid-Design/]
 
@@ -25,6 +26,11 @@ d. Lecture 4, Grid Challenge:
 * Method 2, Line naming: [https://codepen.io/Glareone/pen/qeRBjV]
 * Method 3, Naming Grid Areas:  [https://codepen.io/Glareone/pen/rXjNrm] and with some experiments [https://codepen.io/Glareone/pen/bXgGZd]
 
+e. Lecture 5, Implicit vs Explicit Grids:
+* [https://codepen.io/Glareone/pen/wVgBvK]
+
+f. Lecture 6, Align Grid Items:
+* [https://codepen.io/Glareone/pen/gVgbmp]
 
 To start project you could do the next:
 1. npm install
