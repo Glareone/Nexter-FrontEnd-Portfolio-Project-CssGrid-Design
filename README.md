@@ -1,7 +1,41 @@
 Hi!
-Here you could find the result set of Udemy Advanced CSS and SASS Courses (Second Project, Trillo)
+Here you could find the result set of Udemy Advanced CSS and SASS Courses (Third Project, Nexter)
+And also here you could find a lot of simple examples which was made in codepen.
 You can find a demo via the next url:
-[ https://glareone.github.io/Nexter-FrontEnd-Portfolio-Project-CssGrid-Design/]
+[https://glareone.github.io/Nexter-FrontEnd-Portfolio-Project-CssGrid-Design/]
+
+CssGrid properties:
+![alt text](img/cssGrid_properties.jpg)
+
+Codepen demos, ordering by lectures:
+ 
+a. Lecture 1:
+* Basics: [https://codepen.io/Glareone/pen/bXBzMx]
+
+b. Lecture 2, ordering:
+* stage 1: [https://codepen.io/Glareone/pen/PMbvye]
+* stage 2: [https://codepen.io/Glareone/pen/bXByPz]
+
+c. Lecture 3, spanning items (number of column\row, span, -1):
+* stage 1: [https://codepen.io/Glareone/pen/eqBwNJ]
+* stage 2: [https://codepen.io/Glareone/pen/QeGXye]
+* stage 3: [https://codepen.io/Glareone/pen/zgoVKN]
+
+d. Lecture 4, Grid Challenge:
+* Method 1, Line numbers: [https://codepen.io/Glareone/pen/QeGXrj]
+* Method 2, Line naming: [https://codepen.io/Glareone/pen/qeRBjV]
+* Method 3, Naming Grid Areas:  [https://codepen.io/Glareone/pen/rXjNrm] and with some experiments [https://codepen.io/Glareone/pen/bXgGZd]
+
+e. Lecture 5, Implicit vs Explicit Grids:
+* [https://codepen.io/Glareone/pen/wVgBvK]
+
+f. Lecture 6, Align Grid Items:
+* [https://codepen.io/Glareone/pen/gVgbmp]
+
+g. Lecture 7, Align Tracks (Grid in container):
+*  Stage 1 [https://codepen.io/Glareone/pen/MNJYqG]
+* Stage 2, grid-auto-flow: row dense; [https://codepen.io/Glareone/pen/ZgLYZq] 
+(to change grid order algoritm and occupy some free space, "NO HOLES")
 
 To start project you could do the next:
 1. npm install
