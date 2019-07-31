@@ -32,3 +32,9 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
+.container {
+  display: grid;
+  //min-content here to make container height as large as needed to fit all content inside itself.
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+}
