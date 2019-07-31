@@ -1,4 +1,34 @@
 .gallery {
-  background-color: $color-grey-dark-1;
+  background-color: $color-grey-light-1;
   grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  // we base our row height on viewport width to make this grid gallery responsive as much as possible
+  // this value based on the smallest image in grid
+  grid-template-rows: repeat(7, 5vw);
+
+  grid-gap: 1.5rem;
+  // we need padding because gap is only between cells, not around entire grid system
+  padding: 1.5rem;
+
+   &__item {
+     &--1 {
+       // define the size of the first image
+       grid-row: 1 / span 2;
+       grid-column:  1 / span 2;
+     }
+
+   }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    // object-fit prop prevent cell overflowing by the image. But to use it - we have to use figure HMTL 5 element to wrap our image
+    // we have to define manually width and height to make this property work
+    object-fit: cover;
+    display: block; // we need to specify block to avoid little weird white space after image
+  }
+
+
 }
