@@ -7,8 +7,8 @@ You can find a demo via the next url:
 CssGrid properties:
 ![alt text](img/cssGrid_properties.jpg)
 
-Codepen demos, ordering by lectures:
- 
+<details>
+<summary>Codepen demos, ordering by lectures:</summary>
 a. Lecture 1:
 * Basics: [https://codepen.io/Glareone/pen/bXBzMx]
 
@@ -58,3 +58,4 @@ Also there are several scripts which are used by "build:css" and "start":
 2. "compile:sass": - creates a sass compile file. Used as a start point of build process.
 3. "prefix:css": - uses autoprefixer to support different browsers. It works with compiled file from the beginning.
 4. "compress:css": - compressing the result file and compilation and prefixing
+</details>
