@@ -37,4 +37,23 @@ body {
   display: grid;
   //min-content here to make container height as large as needed to fit all content inside itself.
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  // 8 rem for sidebar
+  // we need to add 2 additional columns (after the sidebar and at the right side of page, they have minmax(6rem, 1fr) width).
+  // we will use them to simply fit our grid system to center and use it to centered our grid content
+
+  // they have 1fr width and will collapse first when we shrink our browser (not only 1fr, but with min max function to make a little margin if it comes too small)
+  // at least 60px (6rem) as minimum content margins. That's why we need minmax here
+
+  // "full-start" means "full-bleed-start". Start of our general grid content system WITH align-columns
+  // "col-start" and "col-end" which are used inside repeat will be created with order values like col-start 1 col-end 1 and so on
+
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+                            [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]
+  minmax(6rem, 1fr)  [full-end]; // 1140px / 8 = 142.5px; ~ 140px; = 14rem
+
+  // we add it only for dev purposes to see better what's going on in template
+  & > * {
+    padding: 40px;
+    font-size: 3rem;
+  }
 }
