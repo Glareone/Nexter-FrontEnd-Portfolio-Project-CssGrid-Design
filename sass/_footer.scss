@@ -1,4 +1,45 @@
 .footer {
   background-color: $color-secondary;
   grid-column: full-start / full-end;
+
+  padding: 8rem;
+}
+
+.nav {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center; // we need this aligning because when element come smaller (in width) the come to be a little bit taller
+  // and we need to align it well
+
+  &__link:link,
+  &__link:visited {
+    display: block; // to prevent additional spaces between elements
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: $font-display;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    transition: all .2s;
+
+
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, .05);
+    transform: translateY(-3px);
+  }
+}
+
+.copyright {
+  width: 70%;
+  font-size: 1.4rem;
+  color: $color-grey-light-2;
+  margin: 6rem auto 0 auto;
+  text-align: center;
 }
