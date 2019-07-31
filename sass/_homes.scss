@@ -7,29 +7,83 @@
 }
 
 .home {
+  // we will use implicit grid inside cards
+  // we define only columns
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: $color-grey-light-1;
 
+  grid-row-gap: 3.5rem;
+
   &__image {
+    grid-column: 1 / -1; // we could use -1 because we explicitly define columns. But we can't use it in rows
+    // if we specify row and column for "image" and "like" - they both will be located in the same cell,
+    // "like" icon will overlap it
+    grid-row: 1 / 2;
     width: 100%;
+
+    z-index: 1; // to be 100% sure that like and image work as we designed (image is under the like)
   }
 
   &__like {
+    // if we specify row and column for "image" and "like" - they both will be located in the same cell,
+    // "like" icon will overlap it
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    justify-self: end; // to place it to right
 
+    fill: $color-primary;
+    height: 2.5rem;
+    width: 2.5rem;
+
+    margin: 1rem;
+    z-index: 2; // to be 100% sure that like and image work as we designed (image is under the like)
   }
 
   &__name {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2; // we define rows explicit to overlap image again as we did with "like" icon
+    justify-self: center;
+    align-self: end;
+    width: 90%;
+    z-index: 3;
 
+    transform: translateY(50%);
+
+    font-family: $font-display;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: $color-secondary;
+    color: #fff;
+    font-weight: 400;
   }
 
-  &__location, &__rooms, &__area, &__price {
+  &__location,
+  &__rooms {
+    margin-top: 2.5rem;
+  }
+
+  &__location,
+  &__rooms,
+  &__area,
+  &__price {
+    display: flex; // to push icon and description from column to row.
+    align-items: center;
+
+    font-size: 1.5rem;
+    margin-left: 2rem;
+
     svg {
       fill: $color-primary;
       height: 2rem;
       width: 2rem;
-    }
 
-    p {
-
+      margin-right: 1rem;
     }
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
   }
 }
