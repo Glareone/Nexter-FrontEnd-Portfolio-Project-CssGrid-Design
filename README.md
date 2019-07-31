@@ -8,7 +8,7 @@ CssGrid properties:
 ![alt text](img/cssGrid_properties.jpg)
 
 <details>
-<summary>Codepen demos, ordering by lectures:</summary>
+<summary><b>Here you could find Codepen demos, ordering by lectures:</b></summary>
 a. Lecture 1:
 * Basics: [https://codepen.io/Glareone/pen/bXBzMx]
 
@@ -45,8 +45,9 @@ h. Lecture 8, min-content, max-content:
 i. Lecture 9, auto-fit, auto-fill:
 * Stage 1, auto-fit and auto-fill: [https://codepen.io/Glareone/pen/EqZjqy?editors=1100]
 * Stage 2, replacing elements if all tracks can't be placed in one row: [https://codepen.io/Glareone/pen/MNJaww]
+</details>
 
-To start project you could do the next:
+***To start project you could do the next:***
 1. npm install
 2. npm run start
 
@@ -58,4 +59,3 @@ Also there are several scripts which are used by "build:css" and "start":
 2. "compile:sass": - creates a sass compile file. Used as a start point of build process.
 3. "prefix:css": - uses autoprefixer to support different browsers. It works with compiled file from the beginning.
 4. "compress:css": - compressing the result file and compilation and prefixing
-</details>
