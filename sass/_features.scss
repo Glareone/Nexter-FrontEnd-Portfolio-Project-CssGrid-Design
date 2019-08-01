@@ -3,30 +3,53 @@
 
   margin: 15rem 0;
 
-  display: grid;
+  /*
+    Test does the browser supports grid system.
+   We could do the same without grid system, using float design
+   Take a look on commented code in feature class (litle bit below this text)
+  */
+  @supports (display: grid) {
+    display: grid;
+    // to make this grid system responsive we need to make it on another way using auto keyword
+    //grid-template-columns: repeat(3, 1fr);
 
-  // to make this grid system responsive we need to make it on another way using auto keyword
-  //grid-template-columns: repeat(3, 1fr);
-
-  // auto-fit makes as many columns as it can based on width size
-  // auto-fit will be between 3 and 1.
-  // also we will use minmax function
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem;
+    // auto-fit makes as many columns as it can based on width size
+    // auto-fit will be between 3 and 1.
+    // also we will use minmax function
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+  }
 }
 
 // completely independent from features because would be reusable in other app parts
 // but put it here because it also a feature
 .feature {
-  display: grid;
-  // instead of putting 4.5rem width for the first column we use min-content
-  grid-template-columns: min-content 1fr;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 2.5rem;
+  // Code if our browser doesn't support grid system
+  // !!PAY ATTENTION!!: we don't need to ignore float inside @supports block because "display: grid" algorithms ignore:
+  // float, table-cell, inline-block
+  float: left;
+  width: 33.33%;
+  margin-bottom: 6rem;
 
-  // we need it because we have different text length and it fits to stretch by default;
-  // it looks unnatural when you compare it with others
-  align-items: start;
+  @supports (display: grid) {
+    // we don't need to ignore float, but we need to define back width of our elements and their margin-bottom
+    width: auto;
+    margin-bottom: 0;
+
+    display: grid;
+    // instead of putting 4.5rem width for the first column we use min-content
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
+
+    // we need it because we have different text length and it fits to stretch by default;
+    // it looks unnatural when you compare it with others
+    align-items: start;
+  }
+
+
+
+
 
   &__icon {
     fill: $color-primary;

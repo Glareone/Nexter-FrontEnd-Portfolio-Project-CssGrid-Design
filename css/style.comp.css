@@ -211,16 +211,30 @@ body {
 .features {
   grid-column: center-start / center-end;
   margin: 15rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem; }
+  /*
+    Test does the browser supports grid system.
+   We could do the same without grid system, using float design
+   Take a look on commented code in feature class (litle bit below this text)
+  */ }
+  @supports (display: grid) {
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 6rem; } }
 
 .feature {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 2.5rem;
-  align-items: start; }
+  float: left;
+  width: 33.33%;
+  margin-bottom: 6rem; }
+  @supports (display: grid) {
+    .feature {
+      width: auto;
+      margin-bottom: 0;
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-row-gap: 1.5rem;
+      grid-column-gap: 2.5rem;
+      align-items: start; } }
   .feature__icon {
     fill: #c69963;
     width: 4.5rem;
