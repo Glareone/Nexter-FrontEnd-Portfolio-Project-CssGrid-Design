@@ -8,11 +8,20 @@
   padding: 4rem 8rem 8rem 8rem;
 
   display: grid;
-  grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content; // we need max content because we need to locate the largest element in rows -
-  // "The ultimate personal freedom" is the largest one
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content); // we use minmax function to make it responsible.
+  // using only min-content or max-content is not enough
+
   grid-row-gap: 1.5rem;
   justify-content: center;
+
+  @media only screen and (max-width: $breakpoint-medium) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (max-width: $breakpoint-small) {
+    padding: 5rem;
+  }
 
   &__logo {
     height: 3rem;
@@ -49,11 +58,14 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
     justify-items: center;
+    align-items: center;
 
     img {
-      height: 2.5rem;
-      transition: filter .2s;
+      max-height: 2.5rem; // we specify max-height to make it responsible
+      max-width: 100%;
+
       filter: brightness(65%); // make our image a little bit darker
+      transition: filter .2s;
 
       &:hover {
         filter: brightness(90%); // make our image a little bit lighter on hover
