@@ -49,7 +49,7 @@ i. Lecture 9, auto-fit, auto-fill:
 
 ***To start project you could do the next:***
 1. npm install
-2. npm run start
+2. npm start
 
 To build the production version of this site you have to use the next script:
 1. npm run build:css
