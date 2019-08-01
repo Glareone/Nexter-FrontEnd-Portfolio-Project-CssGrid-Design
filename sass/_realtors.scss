@@ -9,6 +9,10 @@
   grid-column: col-start 7 / full-end;
   padding: 3rem;
 
+  @media only screen and (max-width: $breakpoint-medium) {
+    grid-column: 1 / -1;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content; // images and text.
@@ -18,6 +22,14 @@
     grid-column-gap: 2rem;
     grid-row-gap: 5vh; // we make it on this manner to support different screen resolutions
     align-items: center;
+
+    @media only screen and (max-width: $breakpoint-medium) { // replace our list from one column to 6 columns
+      grid-template-columns: repeat(3, min-content max-content); // we get 6 tracks here because we set 2 columns in repeater
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__img {
