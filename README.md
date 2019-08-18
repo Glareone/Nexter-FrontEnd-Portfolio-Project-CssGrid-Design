@@ -2,7 +2,7 @@ Hi!
 Here you could find the result set of Udemy Advanced CSS and SASS Courses (Third Project, Nexter)
 And also here you could find a lot of simple examples which was made in codepen.
 You can find a demo via the next url:
-[https://glareone.github.io/Nexter-FrontEnd-Portfolio-Project-CssGrid-Design/]
+[https://glareone.github.io/Advanced-CSSGrid-Nexter-FrontEnd-Portfolio-Project]
 
 CssGrid properties:
 ![alt text](img/cssGrid_properties.jpg)
