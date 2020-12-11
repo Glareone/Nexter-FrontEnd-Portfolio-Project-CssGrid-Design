@@ -23,7 +23,7 @@ And also here you could find a lot of simple examples which was made in codepen.
 ### Lecture 4, Grid Challenge:
 * Method 1, Line numbers: [Link](https://codepen.io/Glareone/pen/QeGXrj)
 * Method 2, Line naming: [Link](https://codepen.io/Glareone/pen/qeRBjV)
-* Method 3, Naming Grid Areas:  [Link](https://codepen.io/Glareone/pen/rXjNrm] and with some experiments [https://codepen.io/Glareone/pen/bXgGZd)
+* Method 3, Naming Grid Areas:  [Link](https://codepen.io/Glareone/pen/rXjNrm). And with some experiments [Link](https://codepen.io/Glareone/pen/bXgGZd)
 
 ### Lecture 5, Implicit vs Explicit Grids:
 * [Link](https://codepen.io/Glareone/pen/wVgBvK)
